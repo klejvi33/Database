@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Te Dhena</title>
+	<!-- CSS Import -->
+	<link rel="stylesheet" href="main.css" />
+	
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	
+</head>
+<body >
+	<!-- App Wrapper -->
+	<main class="app">
+		<!-- Greeting -->
+		<section class="greeting">
+			<h2 class="title">
+				Përshëndetje, <input type="text" id="name" placeholder="Name here" />
+			</h2>
+		</section>
+	
+		
+		
+		<!-- New Input -->
+		<section class="input-name">
+			<h3>Databaza</h3>
+			<form id="input-name-form">
+				<h4>Vendosni emrin:</h4>
+				<input 
+					type="text" 
+					placeholder="Emri"
+					name="content"
+					id="content" />
+				
+				<h4>Student apo Mësues</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="student" /> 
+						<p id="mesues"></p>
+						<span class="bubble student"></span>
+						<div>Student</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="mesues" />
+						<span class="bubble mesues"></span>
+						<div>Mësues</div>
+					</label>
+				</div>
+				<div id="shto">
+				<input type="submit" value="+ SHTO" />
+			</div>
+			</form>
+		</section>
+
+
+		<h3>Personat</h3>
+		
+          
+		<!-- List -->
+		<section class="personat">
+			
+			
+			<div class="list" id="personat"></div>
+		</section>
+
+	</main>
+	
+
+	<!-- JS Import -->
+	<script src="main.js"></script>
+
+</body>
+</html>
